@@ -1,9 +1,9 @@
 
-def example1(arr, first, last)
+def qsort(arr, first, last)
   if first < last
     p_index = partition(arr, first, last)
-    example1(arr, first, p_index - 1)
-    example1(arr, p_index + 1, last)
+    qsort(arr, first, p_index - 1)
+    qsort(arr, p_index + 1, last)
   end
 
   arr

@@ -6,7 +6,7 @@ def qsort(arr, first, last)
     qsort(arr, p_index + 1, last)
   end
 
-  arr
+  return arr
 end
 
 def partition(arr, first, last)
